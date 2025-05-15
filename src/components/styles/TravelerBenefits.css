@@ -1,0 +1,74 @@
+.traveler-benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #f8f9fb;
+  font-family: 'Inter', sans-serif;
+  flex-wrap: wrap;
+}
+
+.benefits-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.benefits-left h1 {
+  font-size: 2.8rem;
+  color: #1e1e1e;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.benefits-left span {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.benefits-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.benefits-second {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-second img {
+  width: 250px;
+  height: auto;
+}
+
+
+.trip-image {
+  width: 100%;
+}
+
+.highlight {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 260px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.highlight1 {
+  top: 25%;
+  left: 5%;
+}
+
+.highlight2 {
+  bottom: 20%;
+  right: 5%;
+}
