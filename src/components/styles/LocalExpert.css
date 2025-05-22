@@ -1,0 +1,230 @@
+/* ========================= */
+/* Local Expert Section      */
+/* ========================= */
+
+.local-expert-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+/* ========================= */
+/* LEFT PANEL (Image)        */
+/* ========================= */
+
+.left-panel {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.expert-image {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ========================= */
+/* RIGHT PANEL (Form)        */
+/* ========================= */
+
+.right-panel {
+  width: 50%;
+  min-width: 300px;
+  padding: 60px 80px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.expert-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ========================= */
+/* Form Fields               */
+/* ========================= */
+
+.form-label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #333333;
+  font-size: 16px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* WhatsApp Input Group      */
+/* ========================= */
+
+.whatsapp-input {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.whatsapp-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.country-code {
+  padding: 14px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-right: none;
+  color: #070101;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.no-radius-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+/* ========================= */
+/* Info Note & Textarea      */
+/* ========================= */
+
+.form-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.info-note {
+  font-size: 14px;
+  color: #555555;
+  margin-top: -10px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ========================= */
+/* Submit Button             */
+/* ========================= */
+
+.send-button {
+  background-color: #ff5c35;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #e04a2a;
+}
+
+/* ========================= */
+/* Responsive Enhancements   */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .local-expert-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 30px 24px;
+  }
+
+  .right-panel {
+    padding: 40px 24px;
+  }
+
+  .expert-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-label {
+    font-size: 15px;
+  }
+
+  .form-input,
+  .form-textarea,
+  .country-code {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .whatsapp-input {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .send-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-panel,
+  .right-panel {
+    padding: 24px 16px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-input,
+  .form-textarea,
+  .country-code {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .send-button {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: 100%;
+  }
+}
