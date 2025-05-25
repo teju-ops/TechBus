@@ -1,0 +1,919 @@
+/* Cab Card styles */
+.cab-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.cab-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cab-details {
+  flex: 1;
+}
+
+.cab-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cab-similar {
+  font-weight: 400;
+  color: #888;
+  margin-left: 6px;
+}
+
+.cab-rating-badge {
+  background-color: #d4f3eb;
+  color: #088178;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.cab-rating-count {
+  color: #666;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.cab-meta {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+}
+
+.cab-tags {
+  display: flex;
+  gap: 32px;
+  margin-top: 10px;
+}
+
+.tag-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tag-column label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.cab-price-section {
+  min-width: 150px;
+  text-align: right;
+}
+
+.cab-discount {
+  color: red;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cab-original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+}
+
+.cab-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cab-tax-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* VerifyDet styles */
+
+.verify-container {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: white;
+  z-index: 10;
+  margin-left: 0;
+}
+
+.verify-header {
+  width: 100%;
+  background: transparent;
+  margin-top: 62px;      /* Increase = down, Decrease = up */
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 15;
+  position: relative;
+}
+
+.verify-header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Inter', Arial, sans-serif;
+  z-index: 15;
+  position: relative;
+  margin-top: -470px; 
+  margin-left: 170px; 
+}
+
+.verify-header-route-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+  z-index: 15;
+  
+}
+
+.verify-header-route-main {
+  font-size: 1.08rem;
+  color: white;
+  font-weight: 700;
+  font-family: 'Inter', Arial, sans-serif;
+  z-index: 15;
+  margin-left: 170px; 
+}
+
+.rating-badge {
+  background:  #75BBAC;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 2px 10px;
+  display: inline-block;
+  z-index: 15;
+}
+
+.verify-header-ratings {
+  color: white;
+  font-size: 1rem;
+  margin-left: 2px;
+  font-weight: 400;
+  z-index: 15;
+}
+
+.verify-header-meta {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 2px;
+  font-family: 'Inter', Arial, sans-serif;
+  z-index: 15;
+  margin-left: 170px; 
+}
+
+.verify-content {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.cab-info {
+  width: 800px;
+  height: 205px;
+  display: flex;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: -400px;
+  z-index: 1;
+  margin-left: 160px;
+}
+
+.cab-image {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.cab-details {
+  flex: 1;
+}
+
+.cab-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cab-similar {
+  font-weight: 400;
+  color: #888;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.cab-rating-badge {
+  background-color: #d4f3eb;
+  color: #088178;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.cab-rating-count {
+  color: #666;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.cab-meta {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+}
+
+.cab-tags {
+  display: flex;
+  gap: 32px;
+  margin-top: 10px;
+}
+
+.tag-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tag-column label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.payment-box {
+  width: 320px;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 1;
+  margin-right: -358px;
+  margin-top: 159px;
+}
+
+.payment-box .price-line {
+  float: right;
+  margin-top: -60px;
+  font-weight: bold;
+}
+
+.discount {
+  color: red;
+  font-size: 14px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.final-price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tax-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.pay-now {
+  width: 100%;
+  background: orangered;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.coupon {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.driver-details {
+  margin-top: 1px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 805px;
+  border:1px solid #ccc;
+  margin-left:-900px;
+  z-index: 2;
+  margin-top: -174px;
+  margin-left: -818px;
+  height: 469px;
+}
+
+.image-tabs {
+  margin-top: 1.5rem;
+}
+
+.image-tabs .note {
+  font-size: 12px;
+  background: #fff3cd;
+  color: #856404;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.tabs button {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #ff4800;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  text-decoration: underline;
+}
+
+.img-placeholders {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.img-box {
+  width: 120px;
+  height: 120px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.back-btn {
+  margin-top: 2rem;
+  background: #ddd;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.note-box {
+  background-color: #fff8e1;
+  color: #444;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: 1px solid #ffe0b2;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  color: #ff4d00;
+  border-bottom: 2px solid #ff4d00;
+}
+
+.img-placeholders {
+  display: flex;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.img-box {
+  width: 200px;
+  height: 180px;
+  background-color: #dcdcdc;
+  border-radius: 8px;
+}
+.driver-cab-info {
+    color: #444;
+    font-size: 13px;
+    margin: 10px 0 14px;
+}
+.driver-details h3 {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: #212121;
+}
+
+.driver-details p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.cab-img-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.cab-img-tabs span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.cab-img-tabs span.active {
+  color: #ff4d00;
+  border-color: #ff4d00;
+}
+
+.cab-images {
+  display: flex;
+  gap: 16px;
+}
+
+.cab-images div {
+  width: 200px;
+  height: 140px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.cab-img-tabs + p {
+  font-size: 13px;
+  color: #555;
+  background-color: #fff8e1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffe0b2;
+  margin-top: 10px;
+}
+.inclusive-exclusive-section {
+  width: 815px;
+  height: 171px;
+  margin: 24px 0 0 0;
+  padding: 9px 2px 10px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+  border: 1px solid #e5e5e5;
+  margin-left: -824px;
+  z-index: 2;
+  margin-top: 311px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.inc-exc-title-row h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #222;
+}
+
+.inc-exc-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  height: 100%;
+}
+
+.inc-exc-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+.inc-exc-col h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+  color: #222;
+}
+
+.inc-exc-col label {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+
+.inc-exc-col input[type="checkbox"] {
+  accent-color: #bbb;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.inc-exc-divider {
+  width: 1px;
+  background: #d3d3d3;
+  align-self: stretch;
+  margin: 0 32px;
+  border-radius: 2px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .inclusive-exclusive-section {
+    padding: 18px 6px;
+  }
+  .inc-exc-content {
+    flex-direction: column;
+    gap: 0;
+  }
+  .inc-exc-divider {
+    display: none;
+  }
+}
+.special-requests-section {
+  width: 815px;
+  height: 113px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  margin-left: -830px;
+  margin-top: 494px;
+  box-sizing: border-box;
+  padding: 20px 32px 14px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.special-requests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.special-requests-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.special-requests-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+.special-requests-content {
+  margin-top: 4px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.special-requests-label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+.special-requests-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  font-size: 1rem;
+}
+
+.special-requests-checkbox input[type="checkbox"] {
+  accent-color: #bbb;
+  width: 18px;
+  height: 18px;
+}
+.pickup-address-box {
+  width: 815px;
+  height: 172px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 24px 28px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 615px;
+  margin-left: -832px;
+}
+
+.pickup-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.pickup-label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.pickup-input-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.pickup-input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 0 44px 0 16px;
+  font-size: 1rem;
+  color: #222;
+  background: #fff;
+  outline: none;
+}
+
+.pickup-input[readonly] {
+  background: #fff;
+  color: #222;
+}
+
+.pickup-check {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.pickup-use-current {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+/* New section: Place this after pickup-address-box in JSX */
+.verify-custom-section {
+  width: 815px;
+  height: 172px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin-top: 550px;
+  margin-left: 0;
+  padding: 24px 28px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Example content for .verify-custom-section */
+.verify-custom-section-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.verify-custom-section-label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+/* ...existing code... */
+
+.traveller-details-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  padding: 16px 16px 16px 16px;
+  width: 815px;
+  height: 261px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 801px;
+  margin-left: -828px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.traveller-details-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.traveller-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.traveller-details-row {
+  display: flex;
+  gap: 18px;
+}
+
+.traveller-details-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  flex: 1;
+}
+
+.traveller-details-name {
+  flex: 1;
+}
+
+.traveller-details-email {
+  flex: 1;
+}
+
+.traveller-details-field label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.traveller-details-field input,
+.traveller-details-field select {
+  height: 44px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 1rem;
+  color: #222;
+  background: #fff;
+  outline: none;
+}
+
+.traveller-details-field select {
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23222' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center/18px 18px;
+  padding-right: 38px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.country-code {
+  color: #888;
+  font-size: 1rem;
+  padding: 0 12px;
+  background: #fff;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  transform: translateY(-6px);
+  height: 60px;
+}
+
+.phone-input-wrapper input {
+  border: none;
+  outline: none;
+  padding: 0 14px;
+  font-size: 1rem;
+  flex: 1;
+  background: #fff;
+  color: #222;
+  height: 100%;
+}
+
+.email-note {
+  color: #888;
+  font-size: 0.95em;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.traveller-details-saved {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+.cancellation-policy-row {
+  width: 815px;
+  height: 56px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px 0 18px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 1075px;
+  margin-left: -830px;
+}
+
+.cancellation-policy-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.cancellation-policy-arrow {
+  display: flex;
+  align-items: center;
+  color: #222;
+}
+/* Add this to your VerifyDet.css */
+
+.other-info-row {
+  width: 815px;
+  height: 56px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px 0 18px;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-top: 1140px;
+  margin-left: -830px;
+}
+
+.other-info-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.other-info-arrow {
+  display: flex;
+  align-items: center;
+  color: #222;
+}

@@ -1,0 +1,327 @@
+/* === Page Layout === */
+/* .page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+} */
+
+/* === Filter Sidebar === */
+.filter-sidebar {
+  width: 254px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-left: 140px;
+}
+
+.filter-sidebar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.filter-group label {
+  display: flex;
+  font-size: 14px;
+  color: #444;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.count {
+  color: #999;
+  justify-content: space-between;
+}
+
+/* === Cab Section Styling === */
+.cab-section-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.cab-section {
+  width: 972px;
+  padding: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -415px;
+  margin-left: 300px;
+}
+
+.free-cancellation-banner {
+  background: #e8f5e9;
+  padding: 12px;
+  border-left: 5px solid green;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.cab-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.cab-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cab-details {
+  flex: 1;
+}
+
+.cab-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cab-similar {
+  font-weight: 400;
+  color: #888;
+  margin-left: 6px;
+}
+
+.cab-rating-badge {
+  background-color: #d4f3eb;
+  color: #088178;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.cab-rating-count {
+  color: #666;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.cab-meta {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+}
+
+.cab-tags {
+  display: flex;
+  gap: 32px;
+  margin-top: 10px;
+}
+
+.tag-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tag-column label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.cab-price-section {
+  min-width: 150px;
+  text-align: right;
+}
+
+.cab-discount {
+  color: red;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cab-original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+}
+
+.cab-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cab-tax-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* === Responsive Adjustments === */
+ @media 
+  (max-width: 972px) { */
+  .page-wrapper {
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 20px;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .cab-section-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cab-section {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cab-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cab-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .cab-details {
+    width: 100%;
+  }
+
+  .cab-tags {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cab-price-section {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+
+  .filter-sidebar h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 10px;
+  }
+
+  .cab-price {
+    font-size: 18px;
+  }
+
+  .book-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* === Global Box Sizing === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Extra Small Devices (<= 400px) === */
+@media (max-width: 400px) {
+  .cab-card {
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .cab-name {
+    font-size: 14px;
+  }
+
+  .cab-meta,
+  .cab-price,
+  .cab-rating-count {
+    font-size: 12px;
+  }
+
+  .cab-price {
+    font-size: 16px;
+  }
+
+  .filter-sidebar {
+    padding: 12px;
+  }
+}
+/* Hide content when VerifyDet is shown */
+.page-wrapper.hide-everything-else > *:not(.nav-container):not(.verify-container) {
+  display: none !important;
+}
+ 
