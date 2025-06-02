@@ -1,0 +1,23 @@
+.traveler-guide-container{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(90deg,white,white);border-radius:20px;padding:40px;color:#fff;max-width:1120px;margin:220px auto 40px;position:relative;overflow:hidden;flex-wrap:wrap;gap:20px;}
+.text-content{z-index:1;max-width:600px;flex:1 1 300px;margin-bottom:20px;}
+.text-content h1{font-size:36px;font-weight:800;margin-bottom:10px;line-height:1.2;}
+.text-content h1 span{font-weight:800;}
+.text-content1 p{font-size:16px;font-weight:400;margin-top:10px;color:#fff;}
+.image-content{position:absolute;right:30px;top:30px;opacity:.15;max-width:80px;width:100%;height:auto;pointer-events:none;}
+@media (max-width:1024px){
+  .traveler-guide-container{padding:35px 30px;}
+  .image-content{max-width:60px;right:20px;top:20px;}
+}
+@media (max-width:768px){
+  .traveler-guide-container{flex-direction:column;text-align:center;padding:30px 20px;}
+  .text-content{max-width:100%;flex:none;margin-bottom:25px;}
+  .text-content h1{font-size:28px;}
+  .text-content1 p{font-size:15px;}
+  .image-content{position:relative;top:auto;right:auto;margin:0 auto 10px;opacity:.1;max-width:50px;}
+}
+@media (max-width:480px){
+  .traveler-guide-container{padding:20px 15px;margin-top: 155px;}
+  .text-content h1{font-size:22px;}
+  .text-content1 p{font-size:14px;}
+  .image-content{max-width:35px;}
+}
