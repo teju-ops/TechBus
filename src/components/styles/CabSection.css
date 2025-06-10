@@ -1,0 +1,492 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* SIDEBAR */
+.filter-sidebar {
+  width: 224px;
+  height:413px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-left: 175px;
+  margin-top: -315px;
+  z-index: 15;
+}
+
+.filter-sidebar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.filter-group label {
+  display: flex;
+  font-size: 14px;
+  color: #444;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.count {
+  color: #999;
+  justify-content: space-between;
+}
+
+/* MAIN CONTENT */
+.cab-section-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.cab-section {
+  width: 915px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  margin-left: -165px;
+  margin-top: -330px;
+  z-index: 15;
+}
+
+.free-cancellation-banner {
+  background: #e8f5e9;
+  padding: 12px;
+  border-left: 5px solid green;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* CAB CARD */
+.cab-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.cab-image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cab-details {
+  flex: 1;
+}
+
+.cab-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cab-similar {
+  font-weight: 400;
+  color: #888;
+  margin-left: 6px;
+}
+
+.cab-rating-badge {
+  background: #d4f3eb;
+  color: #088178;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.cab-rating-count {
+  color: #666;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.cab-meta {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+}
+
+.cab-tags {
+  display: flex;
+  gap: 32px;
+  margin-top: 10px;
+}
+
+.tag-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tag-column label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+/* PRICE SECTION */
+.cab-price-section {
+  min-width: 150px;
+  text-align: right;
+}
+
+.cab-discount {
+  color: red;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cab-original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+}
+
+.cab-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cab-tax-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* BOOKING SUMMARY BAR */
+.booking-summary-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 18px 32px;
+  margin-bottom: 32px;
+  gap: 18px;
+  width: 100%;
+  max-width: 1134px;
+  margin-left: 175px;
+  margin-right: auto;
+  z-index: 20;
+  margin-top: -416px;
+  height: 91px;
+}
+
+
+.summary-segment {
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 8px 18px;
+  min-width: 140px;
+  margin-right: -5px;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.summary-value {
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.summary-placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+.summary-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #bbb;
+  margin: 0 8px;
+}
+
+.summary-search-btn {
+  background: #ff4d00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 36px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: auto;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 156px;
+  height: 37px;
+}
+
+.summary-search-btn:hover {
+  background: #e84300;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* ≤ 972px */
+@media (max-width: 972px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+  }
+
+  .cab-section-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cab-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+  }
+}
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+  .cab-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cab-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .cab-details,
+  .cab-price-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cab-tags {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+
+  .filter-sidebar h3 {
+    text-align: center;
+  }
+}
+
+/* ≤ 480px */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 10px;
+  }
+
+  .cab-price {
+    font-size: 18px;
+  }
+
+  .book-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ≤ 400px */
+@media (max-width: 400px) {
+  .cab-card {
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .cab-name {
+    font-size: 14px;
+  }
+
+  .cab-meta,
+  .cab-price,
+  .cab-rating-count {
+    font-size: 12px;
+  }
+
+  .cab-price {
+    font-size: 16px;
+  }
+
+  .filter-sidebar {
+    padding: 12px;
+  }
+}
+
+/* --- Add this at the end of your file for improved responsiveness --- */
+
+/* Remove fixed negative margins and widths on small screens */
+@media (max-width: 1200px) {
+  .filter-sidebar,
+  .cab-section,
+  .booking-summary-bar {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 972px) {
+  .filter-sidebar,
+  .cab-section,
+  .booking-summary-bar {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100%;
+    max-width: 100%;
+  }
+  .booking-summary-bar {
+    flex-wrap: wrap;
+    padding: 12px 8px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-summary-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 4px;
+    height: auto;
+  }
+  .filter-sidebar,
+  .cab-section {
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-sidebar,
+  .cab-section,
+  .booking-summary-bar {
+    padding: 6px !important;
+    border-radius: 8px !important;
+  }
+  .booking-summary-bar {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-sidebar,
+  .cab-section,
+  .booking-summary-bar {
+    padding: 4px !important;
+    border-radius: 6px !important;
+  }
+  .booking-summary-bar {
+    gap: 4px;
+  }
+}
+
+/* Make .summary-segment stack and fill width on mobile */
+@media (max-width: 600px) {
+  .summary-segment {
+    min-width: unset;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+  .summary-arrow {
+    display: none;
+  }
+  .summary-search-btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+/* Utility class to hide other sections */
+.page-wrapper.hide-everything-else > *:not(.nav-container):not(.verify-container) {
+  display: none !important;
+}
